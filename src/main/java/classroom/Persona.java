@@ -4,7 +4,7 @@ public class Persona {
 
     final long cedula;
     String nombre;
-    static int totalPersonas;
+    static int totalPersonas; 
 
     public Persona(long cedula, String nombre) {
         this.cedula = cedula;
@@ -20,23 +20,19 @@ public class Persona {
 
     public Persona(long cedula) {
         this.cedula = cedula;
-        this.nombre = ""; // Nombre vacío para este caso.
+        this.nombre = ""; 
         totalPersonas++;
     }
 
     public Persona(String nombre) {
-        if (nombre.equals("Alejandro")) {
-            this.cedula = 1; // Caso especial para "Alejandro".
-        } else {
-            this.cedula = totalPersonas + 1; // Incremento total de personas.
-        }
         this.nombre = nombre;
+        this.cedula = totalPersonas + 1; 
         totalPersonas++;
     }
 
     public Persona() {
         this.cedula = 0;
-        this.nombre = "Sin nombre";
+        this.nombre = "Sin nombre"; 
         totalPersonas++;
     }
 
@@ -52,4 +48,3 @@ public class Persona {
         this.nombre = nombre;
     }
 }
-
