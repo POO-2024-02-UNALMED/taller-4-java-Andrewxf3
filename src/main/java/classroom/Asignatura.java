@@ -8,7 +8,7 @@ public class Asignatura {
     public Tipo tipo;
 
     public Asignatura() {
-        this("Sin nombre", Tipo.FUNDAMENTACION);  
+        this("Sin nombre", Tipo.FUNDAMENTACION);
     }
 
     public Asignatura(String nombre, Tipo tipo) {
@@ -19,7 +19,7 @@ public class Asignatura {
     }
 
     public Asignatura(int codigoExterno, Tipo tipo) {
-        this("Sin nombre", 0, codigoExterno, tipo);  
+        this("Sin nombre", 0, codigoExterno, tipo);
     }
 
     public Asignatura(String nombre, int codigoInterno, int codigoExterno, Tipo tipo) {

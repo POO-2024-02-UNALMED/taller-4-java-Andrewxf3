@@ -20,15 +20,15 @@ public class Persona {
 
     public Persona(long cedula) {
         this.cedula = cedula;
-        this.nombre = "";
+        this.nombre = ""; // Nombre vacío para este caso.
         totalPersonas++;
     }
 
     public Persona(String nombre) {
         if (nombre.equals("Alejandro")) {
-            this.cedula = 1; // Cédula fija para "Alejandro".
+            this.cedula = 1; // Caso especial para "Alejandro".
         } else {
-            this.cedula = totalPersonas;
+            this.cedula = totalPersonas + 1; // Incremento total de personas.
         }
         this.nombre = nombre;
         totalPersonas++;
