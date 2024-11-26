@@ -5,7 +5,7 @@ public class Persona {
     final long cedula;
     String nombre;
     static int totalPersonas;
-    
+
     public Persona(long cedula, String nombre) {
         this.cedula = cedula;
         this.nombre = nombre;
@@ -26,7 +26,7 @@ public class Persona {
 
     public Persona(String nombre) {
         if (nombre.equals("Alejandro")) {
-            this.cedula = 1;
+            this.cedula = 1; // Cédula fija para "Alejandro".
         } else {
             this.cedula = totalPersonas;
         }
@@ -35,8 +35,8 @@ public class Persona {
     }
 
     public Persona() {
-        this.cedula = 0; 
-        this.nombre = "Sin nombre"; 
+        this.cedula = 0;
+        this.nombre = "Sin nombre";
         totalPersonas++;
     }
 
@@ -52,3 +52,4 @@ public class Persona {
         this.nombre = nombre;
     }
 }
+
